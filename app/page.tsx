@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Globe, GraduationCap, MapPin, Rocket, CheckCircle, Users, Calendar, Building2, QrCode, Phone, ArrowRight } from 'lucide-react'
+import { Globe, GraduationCap, MapPin, Rocket, CheckCircle, Users, Calendar, Building2, Phone, ArrowRight } from 'lucide-react'
 import HeroSlider from '@/components/hero-slider'
 import StatsSection from '@/components/stats-section'
 import TestimonialsSection from '@/components/testimonials-section'
@@ -15,9 +15,7 @@ export default function Home() {
     window.open('https://forms.gle/eWF1Z9RmoFX1F8ZVA', '_blank')
   }
 
-  const handleContact = () => {
-    alert('Contact information will be displayed')
-  }
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
@@ -262,7 +260,7 @@ export default function Home() {
             👉 Join the waiting list and start your journey to digital excellence
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+          <div className="flex justify-center">
             <Button 
               size="lg" 
               variant="dbi-primary"
@@ -272,23 +270,6 @@ export default function Home() {
               Join Waiting List
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-white text-white hover:bg-white hover:text-[#0066cc] px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:-translate-y-1"
-              onClick={handleContact}
-            >
-              Contact Us
-            </Button>
-          </div>
-          
-          <div className="flex justify-center">
-            <Card className="bg-white/20 backdrop-blur-sm border border-white/30">
-              <CardContent className="p-8 text-center">
-                <QrCode className="w-16 h-16 mx-auto mb-4" />
-                <p className="text-lg font-medium">QR Code</p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
